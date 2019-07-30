@@ -1,2 +1,2 @@
 # riddle_solvers
-solutions to fun riddles
+Solutions to fun riddles
