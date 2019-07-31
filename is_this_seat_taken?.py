@@ -14,6 +14,13 @@ they will randomly choose one of the remaining seats (after
 the first person, the second person takes a seat; after the
 second person, the third person takes a seat, and so on).
 What is the probability the 100th person sits in Seat 100?
+
+Solution note:
+This solution uses simulation to come up with a solution.
+It is a bit blunt-force, but leads to a lot of flexibility
+in analyzing additional aspects of the riddle posed. One
+extra example is coded in, and that is to return the average
+number of times a random seat was selected by a passenger.
 """
 
 
