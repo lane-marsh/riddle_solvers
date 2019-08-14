@@ -14,10 +14,12 @@ any number of +, any number of -, …) how can he get 21 from
 
 Note: you can’t do things like 15+6 = 21. You have to use the
 four operations as ‘binary’ operations: ((1+5)*6)+7.
+
+*Suspect the riddle calls out incorrect numbers.
 """
 
 var_integer_list = [1, 5, 6, 7]
-var_target = 20
+var_target = 21
 
 
 def calculate(problem_list):
