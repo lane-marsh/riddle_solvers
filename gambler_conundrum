@@ -1,0 +1,38 @@
+import random
+
+
+def black_jack(odds):
+    if random.random() < odds:
+        return True
+    else:
+        return False
+
+def play_black_jack(win_prob=.47, start=250, min_bet=5):
+    wallet = start
+    loss_streak = 0
+
+    while 0 < wallet <= 250:
+        print(wallet)
+        this_bet = min_bet * (2 ** loss_streak)
+        loss_streak += 1
+
+        if black_jack(win_prob):
+            wallet += this_bet
+            loss_streak = 0
+        else:
+            wallet -= this_bet
+
+    return wallet - start
+
+def black_jack_sim(iterations):
+
+    net = 0
+    for game in range(iterations):
+        print(game, net)
+        winnings = play_black_jack()
+        net += winnings
+    print("net winnings: $" + str(net) + "!")
+
+
+if __name__ == '__main__':
+    black_jack_sim(1000)
